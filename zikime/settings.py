@@ -125,4 +125,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
 AUTH_USER_MODEL = 'account.User'
+
+MEDIA_ROOT = '/home/attachment' # 실제 파일이 저장될 경로
+MEDIA_URL = '/media/' # 웹 URL을 통에 첨부 파일에 접근할 수 있는 URL경로
+
+FILE_UPLOAD_MAX_MEMORY_SIZE = '2621440' #파일 업로드 사이즈의 최대값 설정. 기본값은 2.5MB
