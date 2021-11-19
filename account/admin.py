@@ -29,3 +29,7 @@ class CustomUserAdmin(admin.ModelAdmin):
 @admin.register(models.History) 
 class CustomUserAdmin(admin.ModelAdmin):
     pass
+
+@admin.register(models.Regist) 
+class CustomUserAdmin(admin.ModelAdmin):
+    pass
